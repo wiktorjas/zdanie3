@@ -9,7 +9,7 @@ if (isset($_POST['log_in'])) {
 	$haslo = $_POST['pass'];
 	$haslo1 = md5($haslo);
  
-	if ($zapytanie = "SELECT * FROM `uzytkownicy` WHERE `haslo` = ? AND `login` = ?") {
+	if ($zapytanie = "SELECT * FROM `uzytkownicy` WHERE `pass` = ? AND `login` = ?") {
 		$result = $db_mysqli->prepare($zapytanie);
 		$result->bind_param('ss', $haslo1, $login);
 		$result->execute();
