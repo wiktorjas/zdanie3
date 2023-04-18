@@ -1,5 +1,5 @@
 <?php
-session_save_path("session/");
+session_save_path("session/"); //Korzystałem z ineternetu i z poradniku nie jestem pewien czy jest dobrze
 session_start();
  
 include '';
