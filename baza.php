@@ -20,7 +20,6 @@ if (isset($_POST['log_in'])) {
  
 	$result2 = mysqli_num_rows($result);
 	$result3 = mysqli_fetch_array($result);
-	$result4 = mysqli_fetch_array($result);
  
 	
 	print_r($result2);
@@ -33,7 +32,6 @@ if (isset($_POST['log_in'])) {
  echo "<br />";
  echo printf ($result3);
   echo "<br />";
-   echo printf ($result4);
 
 }
 ?>
